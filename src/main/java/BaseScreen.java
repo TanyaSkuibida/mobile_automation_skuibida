@@ -1,43 +1,74 @@
 /**
  * Created by Таня on 05.06.2017.
  */
-public abstract class BaseScreen {
+public abstract class BaseScreen{
 
-    public String title = "New Progect";
-    public int page;
-    public static final String application = "effie";
-    public String username;
+    private String title = "New Progect";
+    private String name;
+    private double sumOrder;
+    private double credit;
+    public static final String application = "SALES";
 
     public BaseScreen(){
 
     }
 
-    public abstract String getTitle();
+    public void attention(String title){
 
-    public Integer goBack(){
-        return 1;
+    }
+    public void attention(double credit) {
+        System.out.println(100000);
     }
 
-    public void setUsername(String username) {
-        this.username = "Skuibida";
+    abstract public String getTitle();
+
+    public String getName() {
+        return name;
     }
+
+    public double getSumOrder() {
+        return sumOrder;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setName(String Name) {
+        this.name = "Marchenko";
+    }
+
+    public void setSumOrder(double sumOrder) {
+        this.sumOrder = sumOrder;
+    }
+
+    public double getCredit() {
+        return credit;
+    }
+
+    public void setCredit(double credit) {
+        this.credit = credit;
+    }
+
+    public void goBack(){
+        if (credit > sumOrder){
+            System.out.println("Error");
+        }
+        else{
+            System.out.println("Make the order");
+        }
+    }
+
 }
 
-
 /*
-
-
-4. Создать 3 класса наследника, каждый из которых наследуется от BaseScreen.
 
 В каждом из классов создать по одному приватному и публичному методу,
 которые работают с коллекциями.
 
-5. ArrayList, HashSet и HashMap должны быть использованы в
-классах-наследниках на ваше усмотрение.
+Итераторы и forEach также должны быть использованы.
+В  проекте должны быть использованы и Overload.
 
-6. Итераторы и forEach также должны быть использованы.
-
-7. Также в вашем проекте должны быть использованы и Overload. Перегрузка (overload)
 
 
 */
