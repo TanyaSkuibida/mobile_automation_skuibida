@@ -9,13 +9,14 @@ public abstract class BaseScreen{
     private double credit;
     public static final String application = "SALES";
 
-    public BaseScreen(){
+    public BaseScreen() {
 
     }
 
-    public void attention(String title){
+    public void attention(String title) {
 
     }
+
     public void attention(double credit) {
         System.out.println(100000);
     }
@@ -50,25 +51,15 @@ public abstract class BaseScreen{
         this.credit = credit;
     }
 
-    public void goBack(){
-        if (credit > sumOrder){
+    public void goBack() {
+        if (credit > sumOrder) {
             System.out.println("Error");
-        }
-        else{
+        } else {
             System.out.println("Make the order");
         }
     }
 
 }
 
-/*
-
-В каждом из классов создать по одному приватному и публичному методу,
-которые работают с коллекциями.
-
-Итераторы и forEach также должны быть использованы.
-В  проекте должны быть использованы и Overload.
 
 
-
-*/

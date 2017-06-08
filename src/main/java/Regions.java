@@ -8,15 +8,14 @@ import java.util.Map;
 public class Regions extends BaseScreen {
 
     public String getTitle() {
-         return "Directory Regions";
+        return "Directory Regions";
     }
 
-/*
     public static void main(String[] args) {
 
-        int[] id = {1, 3, 4};
-        int length = id.length;
-        String[] regions = {};
+        //    int[] id = {1, 3, 4};
+        //    int length = id.length;
+        //    String[] regions = {};
 
         HashMap<Integer, String> region = new HashMap<Integer, String>();
 
@@ -26,7 +25,11 @@ public class Regions extends BaseScreen {
         region.put(3, "Полтавская");
         region.put(4, "Черниговская");
 
-        System.out.println(region.get(23));
+        System.out.println(region);
+
+        System.out.println(region.get(0));
+
+        System.out.println("Количество: " + region.size());
 
         Iterator<Map.Entry<Integer, String>> iterator = region.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -47,6 +50,6 @@ public class Regions extends BaseScreen {
         }
 
     }
-    */
 
 }
+
